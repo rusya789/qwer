@@ -1,0 +1,67 @@
+{
+  "_comment": "Это конфигурационный файл проекта (package.json), описывающий метаданные и зависимости.",
+  "name": "backend",
+  "_comment_name": "Имя проекта (приложения). Обычно пишется в нижнем регистре.",
+  
+  "version": "1.0.0",
+  "_comment_version": "Версия вашего приложения. Следует стандарту семантического версионирования: MAJOR.MINOR.PATCH",
+  
+  "main": "server.js",
+  "_comment_main": "Указывает основной файл проекта — точка входа при запуске команды `node .`",
+  
+  "scripts": {
+    "_comment_scripts": "Скрипты — это команды, которые можно запускать через терминал с помощью `npm run <имя_скрипта>`",
+    
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "_comment_test": "Скрипт `npm test` — пока просто выводит сообщение об отсутствии тестов",
+    
+    "start": "node server.js",
+    "_comment_start": "Скрипт `npm start` — запускает ваш сервер, выполняя `node server.js`"
+  },
+
+  "keywords": [],
+  "_comment_keywords": "Ключевые слова проекта — помогают находить пакет на npm или GitHub",
+  
+  "author": "",
+  "_comment_author": "Имя автора проекта — обычно указывается здесь, если проект опубликован",
+  
+  "license": "ISC",
+  "_comment_license": "Лицензия проекта — говорит о том, как другие могут использовать ваш код. ISC — одна из популярных открытых лицензий",
+  
+  "type": "commonjs",
+  "_comment_type": "Тип модульной системы, которую использует Node.js. 'commonjs' — стандартный тип для Node.js до появления ES-модулей",
+  
+  "dependencies": {
+    "_comment_dependencies": "Список зависимостей, необходимых для работы вашего приложения",
+    
+    "bcrypt": "^5.1.1",
+    "_comment_bcrypt": "Библиотека для шифрования паролей с использованием bcrypt",
+    
+    "bcryptjs": "^2.4.3",
+    "_comment_bcryptjs": "Альтернативная библиотека bcrypt, работает чисто на JavaScript",
+    
+    "cors": "^2.8.5",
+    "_comment_cors": "Позволяет управлять политиками CORS (Cross-Origin Resource Sharing)",
+    
+    "express": "^5.1.0",
+    "_comment_express": "Фреймворк для создания веб-серверов на Node.js",
+    
+    "jsonwebtoken": "^9.0.2",
+    "_comment_jsonwebtoken": "Для создания и проверки JWT токенов (используется для аутентификации)",
+    
+    "nodemailer": "^7.0.2",
+    "_comment_nodemailer": "Отправляет электронные письма из вашего приложения",
+    
+    "pg": "^8.15.6",
+    "_comment_pg": "PostgreSQL клиент для подключения к базе данных PostgreSQL",
+    
+    "pg-hstore": "^2.3.4",
+    "_comment_pg_hstore": "Поддержка сериализации/десериализации данных hstore для PostgreSQL",
+    
+    "sequelize": "^6.37.5",
+    "_comment_sequelize": "ORM (объектно-реляционное отображение) для работы с SQL-базами данных"
+  },
+  
+  "description": "",
+  "_comment_description": "Описание проекта — можно добавить позже, чтобы объяснить, что делает ваш backend"
+}
